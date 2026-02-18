@@ -19,7 +19,7 @@ public class BaseRepository <T extends Identificable> implements Repository<T> {
     }
 
     @Override
-    public List<T> listAll(String lista) {
+    public List<T> listAll() {
         return List.of();
     }
 
