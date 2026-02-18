@@ -1,6 +1,7 @@
 package es.fplumara.dam1.prestamos.service;
 
 import es.fplumara.dam1.prestamos.model.Material;
+import es.fplumara.dam1.prestamos.model.Prestamo;
 
 import java.time.LocalDate;
 
@@ -18,7 +19,8 @@ public class PrestamoServiceImpl implements  PrestamoService {
         if (fecha == null) {
             throw new IllegalArgumentException("La fecha no puede ser vacia");
         }
-
+        }
+     Prestamo prestamo = new Prestamo(String id, LocalDate fecha, String profesor, String idMaterial)
     }
-}
+
 
