@@ -19,7 +19,7 @@ public class CSVMaterialExporter {
 
     private static final String[] HEADER = {"tipo", "id", "nombre", "estado", "extra", "etiquetas"};
 
-    public void escribir(String ruta, List<RegistroMaterialCsv> registros) {
+    public void escribir(String ruta) {
         if (ruta == null || ruta.isBlank()) {
             throw new IllegalArgumentException("La ruta no puede ser null/vacía");
         }

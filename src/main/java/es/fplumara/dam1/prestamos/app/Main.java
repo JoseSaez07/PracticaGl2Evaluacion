@@ -1,5 +1,7 @@
 package es.fplumara.dam1.prestamos.app;
 
+import es.fplumara.dam1.prestamos.csv.CSVMaterialExporter;
+
 /**
  * Main de ejemplo para demostrar el flujo mínimo del examen (sin menú complejo).
  * La idea es que este método ejecute una "demo" por consola.
@@ -45,8 +47,10 @@ public class Main {
          * 7) Exportar a CSV (código proporcionado)
          *    - Convertir tu lista de Material a la estructura que pida el exporter (por ejemplo RegistroMaterialCsv).
          *    - Usar CsvMaterialExporter para escribir "salida_materiales.csv".
-         *
-         * Nota:
+         */
+         CSVMaterialExporter exporter = new CSVMaterialExporter();
+         exporter.escribir("C:\\Users\\JoseSaezSerrano\\PracticaGl2Evaluacion\\data\\materiales.csv");
+         /* Nota:
          * - No hace falta interfaz, ni menú, ni pedir datos por teclado: valores fijos y salida por consola es suficiente.
          */
     }
